@@ -1,6 +1,6 @@
 body{
     margin-top: 0;
-    background-color: rgb(0, 153, 153);
+    background-color: rgb(144, 238, 144);
     display: flex;
     flex-direction: column;
     width: 97.7%;
@@ -47,6 +47,31 @@ nav{
     font-weight: bold;
     font-size: 12;
 }
+
+.btn{
+    position: relative;
+    border: none;
+    transition: all 0.5s;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: transparent;
+    color: white;
+    }
+    
+    .btn::before,
+    .btn::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    }
+    
+    .btn:hover{
+    background: rgb(221, 174, 174);
+    box-shadow: 0 0 5px rgb(221, 174, 174), 0 0 5px rgb(221, 174, 174), 0 0 5px rgb(221, 174, 174), 0 0 5px rgb(221, 174, 174);
+    color: white;
+    }
+
 a{
     text-decoration: none;
     margin-left: 90px;
@@ -108,7 +133,7 @@ label{
     padding: 15px 20px 15px 15px;
     line-height: 1;
     cursor: pointer;
-    background: #232d40;
+    background: rgb(221, 174, 174);
     border-radius: 5px;
 }
 
@@ -169,14 +194,26 @@ input{
 #link1,
 #link2,
 #link3,
-#link4{
-    color: #c5c5c5;
+#link4,
+#link5,
+#link6,
+#link7,
+#link8,
+#link9,
+#link10{
+    color: black;
 }
 
 #type1:checked~#link1 li,
 #type2:checked~#link2 li,
 #type3:checked~#link3 li,
-#type4:checked~#link4 li{
+#type4:checked~#link4 li,
+#type5:checked~#link5 li,
+#type6:checked~#link6 li,
+#type7:checked~#link7 li,
+#type8:checked~#link8 li,
+#type9:checked~#link9 li,
+#type10:checked~#link10 li{
     height: 65px;
     opacity: 1;
     padding-top: 15px;
@@ -185,27 +222,51 @@ input{
 #type1:checked~label #icon span::after,
 #type2:checked~label #icon span::after,
 #type3:checked~label #icon span::after,
-#type4:checked~label #icon span::after{
+#type4:checked~label #icon span::after,
+#type5:checked~label #icon span::after,
+#type6:checked~label #icon span::after,
+#type7:checked~label #icon span::after,
+#type8:checked~label #icon span::after,
+#type9:checked~label #icon span::after,
+#type10:checked~label #icon span::after{
     width: 0;
 }
 
 #type1:checked~label,
 #type2:checked~label,
 #type3:checked~label,
-#type4:checked~label{
-    color: #7ef2c8;
+#type4:checked~label,
+#type5:checked~label,
+#type6:checked~label,
+#type7:checked~label,
+#type8:checked~label,
+#type9:checked~label,
+#type10:checked~label{
+    color: black;
 }
 
 #type1:checked~label #icon span::before,
 #type2:checked~label #icon span::before,
 #type3:checked~label #icon span::before,
-#type4:checked~label #icon span::before{
+#type4:checked~label #icon span::before,
+#type5:checked~label #icon span::before,
+#type6:checked~label #icon span::before,
+#type7:checked~label #icon span::before,
+#type8:checked~label #icon span::before,
+#type9:checked~label #icon span::before,
+#type10:checked~label #icon span::before{
     background: #7ef2c8;
 }
 
 #type1:checked~label #icon span,
 #type2:checked~label #icon span,
 #type3:checked~label #icon span,
-#type4:checked~label #icon span{
+#type4:checked~label #icon span,
+#type5:checked~label #icon span,
+#type6:checked~label #icon span,
+#type7:checked~label #icon span,
+#type8:checked~label #icon span,
+#type9:checked~label #icon span,
+#type10:checked~label #icon span{
     border: 1px solid #7ef2c8;
 }

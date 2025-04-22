@@ -235,3 +235,59 @@ input{
 #type4:checked~label #icon span{
     border: 1px solid #7ef2c8;
 }
+
+
+<div class="container">
+ <div class="item"></div>
+ <div class="item"></div>
+ <div class="item"></div>
+ <div class="item"></div>
+</div>
+
+.item{
+transition: .35s;
+cursor: pointer;
+}
+
+.container:hover > :not ( :hoer){
+opacity: .4:
+transform: scale(0.9):
+}
+
+.item{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    float: left;
+    border-radius: 20px;}
+
+    .container:hover:not(:hover){
+        opacity:.4;
+        transform: scale(0.9);}
+
+        .btn{
+position: relative;
+border: none;
+transition: all 0.5s;
+z-index: 1;
+cursor: pointer;
+border-radius: 3px;
+background-color: transparent;
+color: white;
+}
+
+.btn::before,
+.btn::after{
+content: "";
+position: absolute;
+z-index: -1;
+}
+
+.btn:hover{
+background: black;
+box-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+color: white;
+}
