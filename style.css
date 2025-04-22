@@ -1,0 +1,211 @@
+body{
+    margin-top: 0;
+    background-color: rgb(0, 153, 153);
+    display: flex;
+    flex-direction: column;
+    width: 97.7%;
+    height: 100vh;
+    align-items: center;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
+}
+h2{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+img{
+    height: 350px;
+    width: 350px;
+    margin-bottom: -400px; /*ajustei a logo*/
+}
+#img{
+    background-image: url(Saúdedamulher2.jpg);
+    width: 102.05%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+}
+nav{
+    margin: 100px;/*ajustei a margem do nav*/
+    display: flex;
+}
+.teste{
+    font-weight: bold;
+    font-size: 12;
+}
+a{
+    text-decoration: none;
+    margin-left: 90px;
+    margin-right: 90px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+form{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+#segundario{
+    text-align: center;
+    justify-items: center;
+}
+h3{
+    margin-top: 190px;
+    font-size: 25px;
+}
+#subtitulo{
+    margin-top: 20px;
+    font-size: 21px;
+}
+div{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#Perguntas{
+    
+    border: none;
+}
+footer{
+    background-color: pink;
+    width: 103.5%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    color: #7ef2c8;
+    text-align: center;
+}
+
+.menu{
+    margin: 0 auto;
+    padding: 40px;
+    width: 700px;
+}
+
+label{
+    display: block;
+    margin: 0 0 6px 0;
+    padding: 15px 20px 15px 15px;
+    line-height: 1;
+    cursor: pointer;
+    background: #232d40;
+    border-radius: 5px;
+}
+
+.question{
+    position: relative;
+}
+
+input{
+    display: none;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+#icon span{
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #fff;
+    border-radius: 22px;
+}
+
+#icon span::before{
+    display: block;
+    position:absolute;
+    content: "";
+    top: 10px;
+    left: 6px;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+}
+
+#icon span::after{
+    display: block;
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 10px;
+    width: 2px;
+    height: 10px;
+    background: #fff;
+}
+
+#link1,
+#link2,
+#link3,
+#link4{
+    color: #c5c5c5;
+}
+
+#type1:checked~#link1 li,
+#type2:checked~#link2 li,
+#type3:checked~#link3 li,
+#type4:checked~#link4 li{
+    height: 65px;
+    opacity: 1;
+    padding-top: 15px;
+}
+
+#type1:checked~label #icon span::after,
+#type2:checked~label #icon span::after,
+#type3:checked~label #icon span::after,
+#type4:checked~label #icon span::after{
+    width: 0;
+}
+
+#type1:checked~label,
+#type2:checked~label,
+#type3:checked~label,
+#type4:checked~label{
+    color: #7ef2c8;
+}
+
+#type1:checked~label #icon span::before,
+#type2:checked~label #icon span::before,
+#type3:checked~label #icon span::before,
+#type4:checked~label #icon span::before{
+    background: #7ef2c8;
+}
+
+#type1:checked~label #icon span,
+#type2:checked~label #icon span,
+#type3:checked~label #icon span,
+#type4:checked~label #icon span{
+    border: 1px solid #7ef2c8;
+}
